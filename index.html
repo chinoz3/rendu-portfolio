@@ -1,96 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark" />
-    <title>Le Site Web </title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
-    <link rel="stylesheet" href="asset/CSS.3.css"/>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
         <nav>
             <ul>
-              <h1><li><strong>Portfolio</strong></li></h1>
+                <li><a href="#projet1">Projet 1</a></li>
+                <li><a href="#projet2">Projet 2</a></li>
             </ul>
-            <ul>
-              <li><a href="#" class="secondary">Mes Services</a></li>
-              <li>
-                <details class="dropdown">
-                  <summary>
-                    Account
-                  </summary>
-                  <ul dir="rtl">
-                    <li><a href="#profil">Profil</a></li>
-                    <li><a href="#Parcours">Parcours</a></li>
-                    <li><a href="#Projet"> Projets</a></li>
-                    <li><a href="#CV">CV</a></li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-          </nav>
-        <main>
-          <section>
-            <article>
-              <p>Bonjour je m'appelle zin-el-abidine Feddou, j'ai 19ans et je suis actuellement en formation "La Toile" qui est basé sur l'informatique principalement dans le codage (HTML,CSS,Java...).
-                 J'ai passé deux fois mon bac général et je ne l'ai pas eu. J'aimais bien l'informatique et j'ai fait une reconversion dans l'informatique.</p>
-            </article>
-          </section> 
-          <section>
-            
-            <div class="card">
-            <div class="card-content">
-              <div id="Profil"></div>
-              <h3>Profil</h3>
-               <p style="float:left"><img src="img.pnj2.jpg" /></p>
-               <blockquote class="card-description" style=" float:right" >"Je souhaite être futur developper web ainsi que futur expert en cybersécurité"</p>
-               <div style="clear:both"></div>
-                  <footer>
-                    <cite>- Z.F </cite>
-                  </footer>
-                </blockquote>
-                 <ul>
-                  <li> first Name: zin-el-abidine</li>
-                  <li> Last Name: Feddou </li>
-                  <li>Nationality: Française</li>
-                  <li>Position: étudiant "la toile"</li>
-                  <li> mail: zinelabidine.feddou@latoile.em-lyon.com</li>                                    
-                 </ul>
-            </div>
-            </div>
-            </div>
-          </section>
-          <section>
-            <div id="Parcours"> 
-            <h3>Parcours</h3>
-          <ol>
-            <li>Lycée 4ans, passage de bac général (2 fois l'année de terminal) </li>
-            <li>Intégration du programme "La Toile"</li>       
-          </ol>
-            </div>
-          </section>      
-          <section>
-            <div id="Projets"></div>
-            <h3>Projets</h3>
-          <p> Je souhaiterais intégrer une école en initial ou en alternance dans la cybersécurité pour encore acquérir plus de compétences et d'intégrer le monde du professionnalisme et de la vie du travail. </p>
-            
-          </section> 
-          <section>
-            <div id="CV"> </div>
-            <h3> CV </h3>
-          </section>
-          <p> Pour toutes questions ou demandes merci de bien vouloir mettre son mail, je vous contacterais dans les prochaines 48 heures.</p>
-          <form>
-            <fieldset role="group">
-              <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
-              <input type="submit" value="Subscribe" />
-            </fieldset>
-          </form>
-        </main>
+        </nav>
+        <h1>Mon Portfolio</h1>
     </header>
-  </body>
+    <main>
+        <section>
+       <h2>Description </h2>
+        <p>Salut a tous, je m'appelle Zin-el-abidine Feddou, j'ai 20ans et j'habite à Lyon.Avant de rentrer à la Toile j'étais au Lycée et je suis aller jusqu'en classe de terminal.Ensuite jai passe un mini-stage de 3 semaines en rapport avec la programmation (HTML,CSS). Et j'ai fini par rejoindre une formation de développeur web. A coté de ça j'entraine une équipe de football et je joue au football en club.</p>
+        </section>
+        <section id="projet1">
+            <h2>Projet 1 : Developper web</h2>
+            <p>Actuellement en formation à la Toile, j'apprend à faire de la programmation web, pour ensuite faire une poursuite d'étude en informatique. </p>
+            <img src="https://sokeo.fr/wp-content/uploads/2020/04/programmation-informatique-definition-1024x550.jpg" alt="Image du projet 1">
+        </section>
+        <section id="projet2">
+            <h2>Projet 2 : Entraîneur de foot</h2>
+            <p>Entraîneur de football depuis 3ans,ma première année étais avec une équipe de 10ans (U10), ma deuxième année avec une équipe de 12ans (catégorie U12) et cette année j'ai passé un dîplome de coach et j'entraine une équipe féminine de 15-16 et 17ans (Catégorie U18F).  </p>
+            <img src="https://www.asmontchatlyon.com/media/uploaded/sites/404/actualite/651c28810e2aa_IMG0880.jpeg" alt="Image du projet 2">
+        </section>
+    </main>
+    <p> Pour toutes questions ou avis merci de m'en faire part :</p>
+    <form action="/ma-page-de-traitement" method="post">
+      <ul>
+        <li>
+          <label for="name">Nom&nbsp;:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">E-mail&nbsp;:</label>
+          <input type="email" id="mail" name="user_mail" />
+        </li>
+        <li>
+          <label for="msg">Message&nbsp;:</label>
+          <textarea id="msg" name="user_message"></textarea>
+            <div class="button">
+     <button type="submit">Envoyer le message</button>
+            </div>
+
+        </li>
+      </ul>
+    </form>
+    <footer>
+        <p>&copy; 2024 - Feddou Zin</p>
+    </footer>
+</body>
 </html>
